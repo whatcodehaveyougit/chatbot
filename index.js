@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 app.get('/webhook', (req, res) => {
 
     // Your verify token. Should be a random string.
-    let VERIFY_TOKEN = "sigurdbot"
+    let VERIFY_TOKEN = "EAADC3oKaWooBAHQ1P2ihdlqqShWtoCGO6mT4o7r3H61wtwvwelQSdYHG8bsOy7cEmfR21yefHDm0VCBHtZC23ZBCJlimB9TtewGeT5uTMueNZCc0bHi4OR6ZCfheitaWXAixjUrwMiHnIcjpVdiN1zS0V9EydHhpd7fZCkqrUJQZDZD"
       
     // Parse the query params
     let mode = req.query['hub.mode'];
@@ -42,7 +42,7 @@ app.get('/webhook', (req, res) => {
       }
     }
   });
-
+ 
 //   Creates the endpoint for our webhook 
 app.post('/webhook', (req, res) => {  
  
